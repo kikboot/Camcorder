@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Птичье Гнездо</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Лого.png" alt="Логотип" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="favorites.html">Избранное</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="sos.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>О нас</h2>
+            <p>Птичье Гнездо: История качества и доступности</p>
+
+                <p>Птичье Гнездо - это не просто магазин, это история. Наш путь начался с 1996 года с маленького магазинчика, где мы предлагали видеокамеры как для организаций, так и для личного использования. </p>
+                
+                <p>Мы верили в себя, и это позволило нам расти и развиваться. Сегодня мы - крупный магазин в нескольких городах России и других стран СНГ.  </p>
+                
+                <p> За годы работы мы завоевали доверие 1 млн. клиентов, которые оценили нашу работу.</p>
+                
+                    <p> Наши преимущества:</p>
+                
+                        <p>* Широкий ассортимент.</p>
+                            <p>* Качество: Мы работаем только с проверенными поставщиками и предлагаем товары. </p>
+                                <p>* Доступные цены: Мы стараемся сделать качественные товары доступными для каждого.</p>
+                
+                                            <p>Птичье Гнездо - это больше, чем просто покупки. Это место, где вы найдете качественные товары, удобность и надежность. </p>
+                
+                                                <p>Приходите к нам, и убедитесь в этом сами!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин видеокамер</p>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTopBtn">Наверх</button>
+
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" 
+            });
+        };
+    </script>
+
+</body>
+</html>
